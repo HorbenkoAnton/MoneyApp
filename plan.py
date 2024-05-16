@@ -35,3 +35,5 @@
 #serializers
 #views
 #urls
+
+#things i also need: API root, auth system, permissions,
