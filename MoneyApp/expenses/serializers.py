@@ -14,3 +14,9 @@ class ExpenseSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Expense
         fields = ['name' ,'amount','description', 'category','date','owner']
+
+    def validate_category(self, value):
+        request = self.context.get('request')
+        if value.owner != request.user:
+            raise serializers.ValidationError("You do not own this category.")
+        return value

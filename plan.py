@@ -26,7 +26,7 @@
 #category: name, owner;
 #exepnse: name,amount,description(optional), category, date, owner; 
 
-#UserProfile: name, expenses ,categories;
+#UserProfile: name, 
 
 #step by step:
 #database setup
@@ -36,4 +36,4 @@
 #views
 #urls
 
-#things i also need: API root, auth system, permissions,
+#things i also need: API root, auth system, permissions
